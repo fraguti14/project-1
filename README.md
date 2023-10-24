@@ -22,7 +22,7 @@ Which stocks have the most volatility relative to the overall market? (Based on 
 Based on the data, what two stocks would you recommend to The board of directors at the company to buy?
 
 Datasets to be used:
-Nasdaq 
+https://www.alphavantage.co/ 
 Yahoo Finance API
 
 Rough breakdown (Git projects)
