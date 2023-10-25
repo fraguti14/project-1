@@ -52,8 +52,7 @@ Research Questions to Answer:
 ● Which stocks have the most volatility relative to the overall market? (Based on Beta)
 ● Based on the data, what two stocks would you recommend to The board of directors at
 the company to buy?
-2
-  Andrea Barreto | Arezoo Tavakoli | Juan Diaz Gutierrez | Francisco Jose Diaz Gutierrez
+
 
   Research Methodology
 For the purpose of this project, we have narrowed down our research focus to a selected group of 8 stocks. These 8 stocks are considered representative of the major players in the NASDAQ
@@ -74,10 +73,10 @@ Deviations (SDEVs) (Data sourced from alphavantage)
 “Based on the data, what two stocks would you recommend to The board of directors at the company to buy?”
 ● Based on the data collected while addressing all these research questions, we will determine two stocks to recommend to the company's board of directors for potential investment.
 The final recommendations presented to the board will consider stocks that are trending upwards, demonstrating sustained momentum, and exhibiting strong P/E performance, all while maintaining a stable Beta value to ensure a lower level of risk. We will utilize the Delta timeseries to assess growth and performance trends, the SMA within the Bollinger Bands to determine the overall trend direction, and the 2 standard deviation-based bands to identify potential sentiment and buy and sell signals. Furthermore, we will use the P/E ratio to evaluate stock profitability, sentiment, and performance, and we will contrast it with the Beta value to gauge the stock's volatility within the broader market context.
-3
-       Andrea Barreto | Arezoo Tavakoli | Juan Diaz Gutierrez | Francisco Jose Diaz Gutierrez
+
 
   KPI defintions Bollinger Bands
+  
 Bollinger Bands are used to gauge the price's relative position within these bands. When the price is near the upper band, it may indicate that the stock is overbought, and when it's near the lower band, it may suggest that the stock is oversold. They consist of four lines:
 ● The middle band, which is typically a simple moving average (SMA).
 ● An upper band that is placed above the middle band and is typically two standard
@@ -91,8 +90,7 @@ Beta:
 Beta measures how much a stock’s price typically moves compared to the overall stock market.
 P/E Ratio:
 The Price-to-Earnings (P/E) ratio is a measure in the stock market that shows how much investors are willing to pay for a company's earnings
-4
- Andrea Barreto | Arezoo Tavakoli | Juan Diaz Gutierrez | Francisco Jose Diaz Gutierrez
+
 
   Code Logic & Highlights
 The submitted repository contains all the relevant data including code, logic and planning for project one. This section here focuses on explaining the code and the logc used as well as highlighng efficiencies and limitaitons in our code. (Repository)
@@ -104,13 +102,14 @@ In addition to our API call to Alphavantage, we utilized Yahoo Finance's Python 
 Data Slicing (daily, weekly)
 Our primary dataset combines daily closing prices, tickers, and data frames for all the stocks under scrutiny in this analysis. We maintain daily data as our primary reference point and make adjustments as needed based on the specific task at hand. Additionally, we have a secondary dataframe that encompasses all stocks along with their corresponding Beta and P/E ratios.
 For our time series charts and Bollinger Bands charts, we transformed our daily data into a weekly format either through a function or a loop. This decision was made to enhance the visual representation of the data, as weekly intervals provided a clearer presentation.
-5
-   Andrea Barreto | Arezoo Tavakoli | Juan Diaz Gutierrez | Francisco Jose Diaz Gutierrez
 
   Code Efficiency
 We make use of Python functions wherever applicable to generate our charts. These functions encapsulate a substantial portion of code to streamline and simplify our for-loops. As a result, we've created a variety of charts, including bar charts, line charts, and multi-line charts, to effectively present all our available metrics.
 Example:
-6
+<img width="864" alt="Screenshot 2023-10-25 at 6 30 18 PM" src="https://github.com/fraguti14/project-1/assets/139180717/e644afa6-477b-44b6-bb46-f29d3848e380">
+
+
+
  Furthermore, we have incorporated time constraints to prevent potential API call failures stemming from client-side limitations. We have implemented precise timing restrictions and included a progress bar to inform the user about the ongoing progress and anticipated completion time.
 Example:
   Andrea Barreto | Arezoo Tavakoli | Juan Diaz Gutierrez | Francisco Jose Diaz Gutierrez
